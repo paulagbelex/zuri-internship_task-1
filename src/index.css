@@ -1,13 +1,167 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+#slack {
+  display: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  flex-direction: column;
+  width: 99%;
+  font-family: Inter;
+}
+
+.share-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 208px;
+  top: 60px;
+  background: #FFFFFF;
+  border: 1px dashed hsl(217, 16%, 84%);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.share-icon:hover {
+  background-color: #c5c5c6;
+}
+
+.share-display {
+  color: rgb(255, 255, 255);
+  display: block;
+  position: absolute;
+  right: 29.14%;
+  top: -27.75px;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 8px 12px;
+
+}
+
+.share-icon img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#profile__img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 88px;
+  height: 88px;
+  border-radius: 275px;
+
+}
+
+.profile_div {
+  align-items: end;
+  background-color: initial;
+  border-radius: 50%;
+  display: grid;
+  grid-column: 1/1;
+  grid-row: 1/1;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  justify-items: center;
+  transition: all .23s ease-in-out;
+  width: 100%;
+}
+
+.overlay_img {
+  display: none;
+  height: 19px;
+  margin: 10px;
+  transition: all .3s ease-in-out;
+  width: 20px;
+
+}
+
+.profile_div:hover,
+.overlay_img:hover {
+  opacity: 0.5;
+
+}
+
+#twitter {
+  display: block;
+  height: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+  margin-bottom: 80px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 24px;
+  justify-items: center;
+
+}
+
+.books {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  background-color: #EAECF0;
+  width: 1152px;
+  height: 76px;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-decoration: none;
+
+
+
+}
+
+.books:hover {
+  background-color: #bdbec1;
+}
+
+.books span {
+  text-align: center;
+  text-transform: capitalize;
+  list-style-type: none;
+  color: #101828;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.socio-link {
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  margin-top: 20px;
+}
+
+.socio-link a {
+  margin: 20px;
+
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 98%;
+  border-top: 1px solid #EAECF0;
+  padding-top: 40px;
+  margin-top: 80px;
+  background-color: #FFFFFF;
+  margin-bottom: 25px;
 }
