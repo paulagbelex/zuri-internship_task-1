@@ -5,8 +5,8 @@ function Icon() {
         <div className="share-wrapper">
             
             <button className="share-icon">
-                <p className="share-display" > share link</p>
-                <img src={share} alt="share icon" className="share"/>
+                <img src={share} alt="share icon" className="share" />
+                <span className="tooltipText">share icon</span>
             </button>
         </div>
     )

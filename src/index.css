@@ -11,6 +11,8 @@ body {
   font-family: Inter;
 }
 
+
+
 .share-icon {
   position: absolute;
   width: 40px;
@@ -23,21 +25,30 @@ body {
   cursor: pointer;
 }
 
-.share-icon:hover {
-  background-color: #c5c5c6;
-}
+.share-icon .tooltipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
 
-.share-display {
-  color: rgb(255, 255, 255);
-  display: block;
+  /* Position the tooltip */
   position: absolute;
-  right: 29.14%;
-  top: -27.75px;
-  background: rgb(0, 0, 0);
-  border-radius: 8px;
-  padding: 8px 12px;
+  z-index: 1;
+  top: 2px;
+  right: 117%;
+
+
 
 }
+
+
+.share-icon:hover .tooltipText {
+  visibility: visible;
+}
+
 
 .share-icon img {
   display: flex;
@@ -57,32 +68,33 @@ body {
 }
 
 .profile_div {
-  align-items: end;
-  background-color: initial;
-  border-radius: 50%;
-  display: grid;
-  grid-column: 1/1;
-  grid-row: 1/1;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  height: 100%;
-  justify-items: center;
-  transition: all .23s ease-in-out;
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 88px;
+  height: 88px;
+  border-radius: 275px;
 }
 
-.overlay_img {
-  display: none;
-  height: 19px;
-  margin: 10px;
-  transition: all .3s ease-in-out;
-  width: 20px;
+
+.profile_div:hover {
+  background-color: #101828;
+  opacity: 0.8;
 
 }
 
-.profile_div:hover,
-.overlay_img:hover {
-  opacity: 0.5;
+.cam {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  right: 49%;
+  top: 19.5%;
+  height: 1px;
+
+}
+
+.profile_div:hover .cam {
+  visibility: visible;
 
 }
 
@@ -109,7 +121,7 @@ body {
 
 }
 
-.books {
+.card {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -117,13 +129,11 @@ body {
   padding: 0px;
   gap: 12px;
   background-color: #EAECF0;
-  width: 1152px;
+  width: 100%;
   height: 76px;
   border: 1px solid white;
   border-radius: 8px;
   text-decoration: none;
-
-
 
 }
 
